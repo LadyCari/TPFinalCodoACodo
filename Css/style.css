@@ -1,0 +1,294 @@
+:root {
+  /* nav */
+  --colorBackNav: rgb(53, 58, 64);
+  --colorLetrasNav: rgb(182, 178, 178);
+  --colorLetraTicket: rgb(43, 111, 62);
+  --colorLetraLogo: white;
+  /* general */
+  --colorLetraCarrucel: white;
+
+  /*oradores*/
+  --colorBackJS: rgb(252, 193, 5);
+  --colorBackRC: rgb(26, 162, 186);
+  --colorBackNG: rgb(109, 118, 127);
+  --colorBackST: rgb(218, 53, 69);
+
+  /*articulo*/
+  --colorBackArticulo: rgb(53, 58, 64);
+}
+
+/* header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--colorBackNav);
+  padding: 0.7rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+#logo {
+  display: flex;
+  color: white;
+  align-items: center;
+}
+
+#logo img {
+  width: 30%;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+}
+
+header ul li {
+  list-style: none;
+  margin: 1rem;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: var(--colorLetrasNav);
+  font-size: 1.1rem;
+}
+
+header ul li a span {
+  color: var(--colorLetraTicket);
+}
+
+header ul li a:hover {
+  color: var(--colorLetraLogo);
+}
+
+/* body */
+
+#parte1 {
+  background-image: url("../img/ba1.jpg");
+  height: 700px;
+  background-size: cover;
+  background-position: center;
+}
+
+#parte1 div {
+  height: 30%;
+  width: 30%;
+  float: right;
+  position: relative;
+  top: 220px;
+  color: var(--colorLetraCarrucel);
+  text-align: right;
+  margin: 5rem;
+}
+
+#parte1 div ul {
+  display: flex;
+  justify-content: end;
+}
+
+#parte1 div ul li {
+  margin-left: 1rem;
+}
+
+#parte1 div ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+#estilo1 {
+  border: 1px solid white;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+#estilo2 {
+  background-color: rgb(41, 167, 68);
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+#parte2 {
+  align-items: center;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  margin: 2rem;
+}
+
+.titulo {
+  text-align: center;
+  margin: 1rem;
+}
+
+#parte2 article img {
+  width: 400px;
+  margin-bottom: 2rem;
+}
+
+#parte2 article {
+  width: 400px;
+  border: 1px solid rgb(206, 206, 206);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.conocimientos {
+  display: flex;
+}
+
+.conocimientos p {
+  margin: 0.2rem;
+}
+
+.js {
+  background-color: var(--colorBackJS);
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  border-radius: 5px;
+}
+
+.rc {
+  background-color: var(--colorBackRC);
+  color: white;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  border-radius: 5px;
+}
+
+.ng {
+  background-color: var(--colorBackNG);
+  color: white;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  border-radius: 5px;
+}
+
+.st {
+  background-color: var(--colorBackST);
+  color: white;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  border-radius: 5px;
+}
+
+#parte2 article h3 {
+  margin-bottom: 1rem;
+}
+
+.informacionOrador {
+  padding: 1rem;
+}
+
+#parte3 {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+#parte3 div {
+  width: 50%;
+}
+
+#parte3 div img {
+  width: 100%;
+}
+
+#parte3 article {
+  width: 50%;
+  padding: 1rem;
+  background-color: var(--colorBackArticulo);
+  color: white;
+  margin-left: 0.1rem;
+}
+
+#parte3 article p a {
+  border: 1px solid;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  padding: 0.2rem;
+}
+
+#seccionOrador {
+  text-align: center;
+  padding-left: 20rem;
+  padding-right: 20rem;
+}
+
+#seccionOrador div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+input {
+  border: 1px solid grey;
+  width: 400px;
+  border-radius: 5px;
+  padding: 0.3rem;
+}
+
+textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+#recordatorio {
+  text-align: left;
+}
+
+.botonEnviar {
+  width: 100%;
+  border: 1px solid grey;
+  background-color: rgb(150, 201, 62);
+  padding: 1rem;
+  color: white;
+  border: 0;
+}
+
+/*footer*/
+
+footer {
+  background-color: rgb(28, 57, 73);
+  color: white;
+  width: 100%;
+  margin-top: 2rem;
+  text-align: center;
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+footer ul li {
+  list-style: none;
+  margin: 2rem;
+}
+
+@media (max-width: 1220px) {
+  #parte2 {
+    flex-wrap: wrap;
+  }
+  #parte2 article {
+    margin-top: 1rem;
+  }
+
+  #parte3 img {
+    width: 100%;
+    margin-bottom: 0.3rem;
+  }
+
+  #parte3 {
+    flex-wrap: wrap;
+    padding: 2rem;
+  }
+}
