@@ -16,7 +16,10 @@
   /*articulo*/
   --colorBackArticulo: rgb(53, 58, 64);
 }
-
+*{
+  margin: 0;
+  padding:0;
+}
 /* header */
 
 header {
@@ -36,6 +39,9 @@ header {
 
 #logo img {
   width: 30%;
+}
+#link-logo{
+text-decoration: none;
 }
 
 h1 {
@@ -106,10 +112,20 @@ header ul li a:hover {
   border-radius: 5px;
 }
 
+#estilo1:hover{
+  background-color:rgba(0,0,0,0.4);
+  box-shadow: 1px 1px 2px white;
+}
+
+
 #estilo2 {
   background-color: rgb(41, 167, 68);
   padding: 0.5rem;
   border-radius: 5px;
+}
+
+#estilo2:hover{
+  background-color:rgb(30, 210, 60);
 }
 
 #parte2 {
@@ -213,6 +229,11 @@ header ul li a:hover {
   padding: 0.2rem;
 }
 
+#parte3 article p a:hover{
+  background-color:rgba(0,0,0,0.4);
+  box-shadow: 1px 1px 2px white;
+}
+
 #seccionOrador {
   text-align: center;
   padding-left: 20rem;
@@ -250,10 +271,15 @@ textarea {
   color: white;
   border: 0;
 }
+.botonEnviar:hover {
+  font-weight: bold;
+  background-color: rgb(109, 199, 68);
+}
 
 /*footer*/
 
 footer {
+  margin-bottom: -1rem;
   background-color: rgb(28, 57, 73);
   color: white;
   width: 100%;
