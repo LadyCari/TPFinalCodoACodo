@@ -74,37 +74,18 @@ header ul li a:hover {
 
 /* body */
 
-#parte1 {
-  background-image: url("../img/ba1.jpg");
-  height: 700px;
-  background-size: cover;
-  background-position: center;
-}
-
-#parte1 div {
-  height: 30%;
-  width: 30%;
-  float: right;
-  position: relative;
-  top: 220px;
-  color: var(--colorLetraCarrucel);
-  text-align: right;
-  margin: 5rem;
-}
-
-#parte1 div ul {
-  display: flex;
+.carousel-caption {
   justify-content: end;
+  align-items: end;
+  text-align: end;
+  padding-bottom: 13rem;
+  padding-left: 16rem;
+}
+.imgCarousel {
+  filter: brightness(0.5);
 }
 
-#parte1 div ul li {
-  margin-left: 1rem;
-}
 
-#parte1 div ul li a {
-  text-decoration: none;
-  color: white;
-}
 
 #estilo1 {
   border: 1px solid white;
