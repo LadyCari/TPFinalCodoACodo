@@ -22,31 +22,14 @@
 }
 /* header */
 
-header {
-  display: flex;
-  justify-content: space-between;
-  background-color: var(--colorBackNav);
-  padding: 0.7rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
-}
-
-#logo {
-  display: flex;
+.nav-link {
   color: white;
-  align-items: center;
+}
+.verde {
+  color: rgb(144, 216, 35);     /* esto modifica el comprar tickets del navBar*/
 }
 
-#logo img {
-  width: 30%;
-}
-#link-logo{
-text-decoration: none;
-}
 
-h1 {
-  font-size: 1.5rem;
-}
 
 header ul {
   display: flex;
