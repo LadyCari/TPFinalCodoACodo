@@ -4,6 +4,7 @@ package trabajofinalcac.dao;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
@@ -111,6 +112,28 @@ public class OradorData {
         }
 
         return oradores;
+    }
+    
+    public void guardarOrador(Orador orador) {
+        String sql = "INSERT INTO orador (nombre, apellido, tema) VALUES(?,?,?)";
+        try {
+            PreparedStatement ps = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
+            ps.setString(1, orador.getNombre());
+            ps.setString(2, orador.getApellido());
+            ps.setString(3, orador.getTema());
+            
+            ps.executeUpdate();
+            ResultSet rs = ps.getGeneratedKeys();
+
+            if (rs.next()) {
+                orador.setIdOrador(rs.getInt(1));
+                JOptionPane.showMessageDialog(null, "Se guardo el orador exitosamente.");
+            }
+            ps.close();
+
+        } catch (SQLException ex) {
+            JOptionPane.showMessageDialog(null, "No puede acceder a la tabla orador" + ex.getMessage());
+        }
     }
 
 }
