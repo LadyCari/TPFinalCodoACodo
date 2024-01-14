@@ -9,10 +9,8 @@
             <ul>
                 <li>Preguntas frecuentes</li>
                 <li>Contactanos</li>
-                <li>Prensa</li>
                 <li>Conferencias</li>
                 <li>Terminos y condiciones</li>
-                <li>Privacidad</li>
                 <li><a href="./desarrolladores.jsp"> Desarrolladores </a></li>
             </ul>
         </footer>

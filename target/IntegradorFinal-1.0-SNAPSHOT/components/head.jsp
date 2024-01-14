@@ -18,7 +18,8 @@
         <!-- css -->
         <link rel="stylesheet" href="./Css/style.css">
         <link rel="stylesheet" href="./Css/styleOradores.css">
-
+        <!--estilo letras-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
     </head>
 
 
@@ -36,7 +37,7 @@
                     <button class="boton" type="submit" style="background:none; border:none; color:blue; text-decoration:underline; cursor:pointer;">Los oradores</button>
                 </form>
                 <li><a href="#parte3">El lugar y la fecha</a></li>
-                <li><a href="#parte4">Conviertete en orador</a></li>
+                <li><a href="#seccionOrador">Conviertete en orador</a></li>
                 <li><a href=""><span>Comprar tickets</span></a></li>
             </ul>
         </header>

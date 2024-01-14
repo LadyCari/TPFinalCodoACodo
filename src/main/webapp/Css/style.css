@@ -1,330 +1,416 @@
 :root {
-  /* nav */
-  --colorBackNav: rgb(53, 58, 64);
-  --colorLetrasNav: rgb(182, 178, 178);
-  --colorLetraTicket: rgb(43, 111, 62);
-  --colorLetraLogo: white;
-  /* general */
-  --colorLetraCarrucel: white;
+    /* nav */
+    --colorBackNav: rgb(53, 58, 64);
+    --colorLetrasNav: rgb(182, 178, 178);
+    --colorLetraTicket: rgb(43, 111, 62);
+    --colorLetraLogo: white;
 
-  /*oradores*/
-  --colorBackJS: rgb(252, 193, 5);
-  --colorBackRC: rgb(26, 162, 186);
-  --colorBackNG: rgb(109, 118, 127);
-  --colorBackST: rgb(218, 53, 69);
+    /* general */
+    --colorLetraCarrucel: white;
+    --letraGeneral: 'Roboto', sans-serif;
 
-  /*articulo*/
-  --colorBackArticulo: rgb(53, 58, 64);
+    /*oradores*/
+    --colorBackJS: rgb(252, 193, 5);
+    --colorBackRC: rgb(26, 162, 186);
+    --colorBackNG: rgb(109, 118, 127);
+    --colorBackST: rgb(218, 53, 69);
+
+    /*articulo*/
+    --colorBackArticulo: rgb(53, 58, 64);
 }
 *{
-  margin: 0;
-  padding:0;
+    margin: 0;
+    padding:0;
 }
 /* header */
 
 header {
-  display: flex;
-  justify-content: space-between;
-  background-color: var(--colorBackNav);
-  padding: 0.7rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--colorBackNav);
+    padding: 0.7rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
 }
 
 .boton{
     color: var(--colorLetrasNav) !important;
-    text-decoration: none;
+    text-decoration: none !important;
+    font-family: var(--letraGeneral) !important;
+    font-size: 1.2rem !important;
+}
+
+.boton:hover{
+    color: white !important;
 }
 
 a {
     text-decoration: none;
     color: white;
+    font-family: var(--letraGeneral);
 }
 
 #logo {
-  display: flex;
-  color: white;
-  align-items: center;
+    display: flex;
+    color: white;
+    align-items: center;
 }
 
 #logo img {
-  width: 30%;
+    width: 30%;
 }
 #link-logo{
-text-decoration: none;
+    text-decoration: none;
 }
 
 h1 {
-  font-size: 1.5rem;
+    font-size: 1.5rem;
+    font-family: var(--letraGeneral);
 }
 
 header ul {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 header ul li {
-  list-style: none;
-  margin: 1rem;
+    list-style: none;
+    margin: 1rem;
+    font-family: var(--letraGeneral);
 }
 
 header ul li a {
-  text-decoration: none;
-  color: var(--colorLetrasNav);
-  font-size: 1.1rem;
+    text-decoration: none;
+    color: var(--colorLetrasNav);
+    font-size: 1.1rem;
+    font-family: var(--letraGeneral);
 }
 
 header ul li a span {
-  color: var(--colorLetraTicket);
+    color: var(--colorLetraTicket);
+    font-family: var(--letraGeneral);
 }
 
 header ul li a:hover {
-  color: var(--colorLetraLogo);
+    color: var(--colorLetraLogo);
+}
+
+header ul li a span:hover {
+    color: var(--colorLetraLogo);
 }
 
 /* body */
 
 #parte1 {
-  background-image: url("../img/ba1.jpg");
-  height: 700px;
-  background-size: cover;
-  background-position: center;
+    background-image: url("../img/ba1.jpg");
+    height: 700px;
+    background-size: cover;
+    background-position: center;
 }
 
 #parte1 div {
-  height: 30%;
-  width: 30%;
-  float: right;
-  position: relative;
-  top: 220px;
-  color: var(--colorLetraCarrucel);
-  text-align: right;
-  margin: 5rem;
+    height: 30%;
+    width: 30%;
+    float: right;
+    position: relative;
+    top: 220px;
+    color: var(--colorLetraCarrucel);
+    text-align: right;
+    margin: 5rem;
+}
+
+#parte1 div p{
+    -webkit-text-stroke: 2px negro;
 }
 
 #parte1 div ul {
-  display: flex;
-  justify-content: end;
+    display: flex;
+    justify-content: end;
 }
 
 #parte1 div ul li {
-  margin-left: 1rem;
+    margin-left: 1rem;
 }
 
 #parte1 div ul li a {
-  text-decoration: none;
-  color: white;
+    text-decoration: none;
+    color: white;
 }
 
 #estilo1 {
-  border: 1px solid white;
-  padding: 0.5rem;
-  border-radius: 5px;
+    border: 1px solid white;
+    padding: 0.5rem;
+    border-radius: 5px;
 }
 
 #estilo1:hover{
-  background-color:rgba(0,0,0,0.4);
-  box-shadow: 1px 1px 2px white;
+    background-color:rgba(0,0,0,0.4);
+    box-shadow: 1px 1px 2px white;
 }
 
 
 #estilo2 {
-  background-color: rgb(41, 167, 68);
-  padding: 0.5rem;
-  border-radius: 5px;
+    background-color: rgb(41, 167, 68);
+    padding: 0.5rem;
+    border-radius: 5px;
 }
 
 #estilo2:hover{
-  background-color:rgb(30, 210, 60);
+    background-color:rgb(30, 210, 60);
 }
 
 #parte2 {
-  align-items: center;
-  display: flex;
-  width: 100%;
-  justify-content: space-evenly;
-  margin: 2rem;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin: 2rem;
 }
 
 .titulo {
-  text-align: center;
-  margin: 1rem;
+    text-align: center;
+    margin: 1rem;
 }
 
 #parte2 article img {
-  width: 400px;
-  margin-bottom: 2rem;
+    width: 400px;
+    margin-bottom: 2rem;
 }
 
 #parte2 article {
-  width: 400px;
-  border: 1px solid rgb(206, 206, 206);
-  border-radius: 5px;
-  overflow: hidden;
+    width: 400px;
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 .conocimientos {
-  display: flex;
+    display: flex;
 }
 
 .conocimientos p {
-  margin: 0.2rem;
+    margin: 0.2rem;
 }
 
 .js {
-  background-color: var(--colorBackJS);
-  padding-left: 0.2rem;
-  padding-right: 0.2rem;
-  border-radius: 5px;
+    background-color: var(--colorBackJS);
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    border-radius: 5px;
 }
 
 .rc {
-  background-color: var(--colorBackRC);
-  color: white;
-  padding-left: 0.2rem;
-  padding-right: 0.2rem;
-  border-radius: 5px;
+    background-color: var(--colorBackRC);
+    color: white;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    border-radius: 5px;
 }
 
 .ng {
-  background-color: var(--colorBackNG);
-  color: white;
-  padding-left: 0.2rem;
-  padding-right: 0.2rem;
-  border-radius: 5px;
+    background-color: var(--colorBackNG);
+    color: white;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    border-radius: 5px;
 }
 
 .st {
-  background-color: var(--colorBackST);
-  color: white;
-  padding-left: 0.2rem;
-  padding-right: 0.2rem;
-  border-radius: 5px;
+    background-color: var(--colorBackST);
+    color: white;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    border-radius: 5px;
 }
 
 #parte2 article h3 {
-  margin-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 .informacionOrador {
-  padding: 1rem;
+    padding: 1rem;
 }
 
 #parte3 {
-  display: flex;
-  margin-bottom: 2rem;
+    display: flex;
+    margin-bottom: 2rem;
 }
 
 #parte3 div {
-  width: 50%;
+    width: 50%;
 }
 
 #parte3 div img {
-  width: 100%;
+    width: 100%;
 }
 
 #parte3 article {
-  width: 50%;
-  padding: 1rem;
-  background-color: var(--colorBackArticulo);
-  color: white;
-  margin-left: 0.1rem;
+    width: 50%;
+    padding: 1rem;
+    background-color: var(--colorBackArticulo);
+    color: white;
+    margin-left: 0.1rem;
 }
 
 #parte3 article p a {
-  border: 1px solid;
-  text-decoration: none;
-  color: white;
-  border-radius: 5px;
-  padding: 0.2rem;
+    border: 1px solid;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    padding: 0.2rem;
 }
 
 #parte3 article p a:hover{
-  background-color:rgba(0,0,0,0.4);
-  box-shadow: 1px 1px 2px white;
+    background-color:rgba(0,0,0,0.4);
+    box-shadow: 1px 1px 2px white;
 }
 
 #seccionOrador {
-  text-align: center;
-  padding-left: 20rem;
-  padding-right: 20rem;
+    text-align: center;
+    padding-left: 20rem;
+    padding-right: 20rem;
 }
 
 #seccionOrador div {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
 }
 
 input {
-  border: 1px solid grey;
-  width: 400px;
-  border-radius: 5px;
-  padding: 0.3rem;
+    border: 1px solid grey;
+    width: 400px;
+    border-radius: 5px;
+    padding: 0.3rem;
 }
 
 textarea {
-  width: 100%;
-  margin-bottom: 10px;
-  border-radius: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
 }
 
 #recordatorio {
-  text-align: left;
+    text-align: left;
 }
 
 .botonEnviar {
-  width: 100%;
-  border: 1px solid grey;
-  background-color: rgb(150, 201, 62);
-  padding: 1rem;
-  color: white;
-  border: 0;
+    width: 100%;
+    border: 1px solid grey;
+    background-color: rgb(150, 201, 62);
+    padding: 1rem;
+    color: white;
+    border: 0;
 }
 .botonEnviar:hover {
-  font-weight: bold;
-  background-color: rgb(109, 199, 68);
+    font-weight: bold;
+    background-color: rgb(109, 199, 68);
 }
 
 /*footer*/
 
 footer {
-  margin-bottom: -1rem;
-  background-color: rgb(28, 57, 73);
-  color: white;
-  width: 100%;
-  margin-top: 2rem;
-  text-align: center;
-  padding-left: 6rem;
-  padding-right: 6rem;
+    margin-bottom: -1rem;
+    background-color: rgb(28, 57, 73);
+    color: white;
+    width: 100%;
+    margin-top: 2rem;
+    text-align: center;
+    padding-left: 6rem;
+    padding-right: 6rem;
 }
 
 footer ul {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 footer ul li {
-  list-style: none;
-  margin: 2rem;
+    list-style: none;
+    margin: 2rem;
 }
 
 @media (max-width: 1220px) {
-  #parte2 {
-    flex-wrap: wrap;
-  }
-  #parte2 article {
-    margin-top: 1rem;
-  }
+    #parte2 {
+        flex-wrap: wrap;
+    }
+    #parte2 article {
+        margin-top: 1rem;
+    }
 
-  #parte3 img {
-    width: 100%;
-    margin-bottom: 0.3rem;
-  }
+    #parte3 img {
+        width: 100%;
+        margin-bottom: 0.3rem;
+    }
 
-  #parte3 {
+    #parte3 {
+        flex-wrap: wrap;
+        padding: 2rem;
+    }
+}
+
+:root {
+
+    /* general */
+    --colorLetraGenerica: black;
+    --sombraGenerica: 4px 3px 5px #000000;
+    --bordeGenerico: 2px solid black;
+    --radioBorde: 20px;
+    --backTarjetasDesarrolladores:  rgba(26, 180, 180, 0.588);
+}
+
+/*main*/
+
+h2 {
+    text-align: center;
+    margin: 2rem;
+    font-size: 2rem;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.cuerpoDesarrolladores conteiner {
+    display: flex;
     flex-wrap: wrap;
-    padding: 2rem;
-  }
+    justify-content: space-evenly;
+}
+
+.desarrolladorTarjeta {
+    width: 350px;
+    height: 20rem;
+    border-radius: var(--radioBorde);
+    box-shadow: var(--sombraGenerica);
+    padding: 1rem;
+    overflow: hidden;
+    transition: 1s;
+    text-align: center;
+    margin: 1rem;
+    background-color: var(--backTarjetasDesarrolladores);
+}
+
+.desarrolladorTarjeta i{
+    font-size: 3rem;
+}
+
+.desarrolladorTarjeta img {
+    height: 10rem;
+    border-top-right-radius: var(--radioBorde);
+    border-top-left-radius: var(--radioBorde);
+}
+
+.cuerpoDesarrolladores{
+    position:absolute;
+    top: 150px;
+    right: 5rem;
+    left: 5rem
+}
+
+.iconos{
+    display: flex;
+    justify-content: space-evenly;
 }

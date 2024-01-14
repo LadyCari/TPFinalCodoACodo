@@ -2,7 +2,8 @@
 
 <html>
 <%@ include file="components/head.jsp"%>
-                <section id="parte1" clase="parte1">
+
+                <section id="parte1">
                 <div>
                     <h2>Conf Bs As</h2>
                     <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nueva comunidad el conocimiento
