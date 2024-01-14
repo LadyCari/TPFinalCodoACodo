@@ -17,6 +17,7 @@
         <link rel="icon" sizes="16x16" href="img/codoacodo.png">
         <!-- css -->
         <link rel="stylesheet" href="./Css/style.css">
+        <link rel="stylesheet" href="./Css/styleOradores.css">
 
     </head>
 
@@ -24,36 +25,23 @@
     <body>
 
         <header>
-            <a href="index.html" id="link-logo">
+            <a href="index.jsp" id="link-logo">
                 <div id="logo"> 
                     <img src="./img/codoacodo.png" alt="Logo codo a codo">
                     <h1>Conf Bs As</h1>
                 </div>
             </a>
             <ul>
-                <li><a href="">La conferencia</a></li>
-                <form action="SvOradores" method="GET">
-                    <button type="submit" style="background:none; border:none; color:blue; text-decoration:underline; cursor:pointer;">Los oradores</button>
+                <form action="SvOradores" method="GET" >
+                    <button class="boton" type="submit" style="background:none; border:none; color:blue; text-decoration:underline; cursor:pointer;">Los oradores</button>
                 </form>
-                <li><a href="">El lugar y la fecha</a></li>
-                <li><a href="">Conviertete en orador</a></li>
+                <li><a href="#parte3">El lugar y la fecha</a></li>
+                <li><a href="#parte4">Conviertete en orador</a></li>
                 <li><a href=""><span>Comprar tickets</span></a></li>
             </ul>
         </header>
 
         <main>
-            <section id="parte1">
-                <div>
-                    <h2>Conf Bs As</h2>
-                    <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nueva comunidad el conocimiento
-                        y experiencia de los expertos que estan creando el futuro de internet. Ven a conocer a miembros del
-                        evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te
-                        esperamos!</p>
-                    <ul>
-                        <li id="estilo1"><a href="#seccionOrador">Quiero ser orador</a></li>
-                        <li id="estilo2"><a href="">Comprar tickets</a></li>
-                    </ul>
-                </div>
-            </section>
+
 
 

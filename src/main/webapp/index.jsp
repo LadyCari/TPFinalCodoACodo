@@ -2,10 +2,22 @@
 
 <html>
 <%@ include file="components/head.jsp"%>
-    
+                <section id="parte1" clase="parte1">
+                <div>
+                    <h2>Conf Bs As</h2>
+                    <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nueva comunidad el conocimiento
+                        y experiencia de los expertos que estan creando el futuro de internet. Ven a conocer a miembros del
+                        evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te
+                        esperamos!</p>
+                    <ul>
+                        <li id="estilo1"><a href="#seccionOrador">Quiero ser orador</a></li>
+                        <li id="estilo2"><a href="">Comprar tickets</a></li>
+                    </ul>
+                </div>
+            </section>
 
             <div class="titulo">
-                <p>CONOCE A LOS</p>
+                <p>CONOCE A ALGUNOS DE LOS</p>
                 <h2>ORADORES</h2>
             </div>
 
@@ -51,7 +63,7 @@
                 </article>
             </section>
 
-            <section id="parte3">
+            <section id="parte3" clase="parte3">
                 <div><img src="./img/honolulu.jpg" alt="Playa Hono lulu"></div>
                 <article>
                     <h2>Bs As - Octubre</h2>
@@ -64,7 +76,7 @@
                 </article>
             </section>
 
-            <section id="seccionOrador">
+            <section id="seccionOrador" clase="parte4">
                 <p>CONVIERTETE EN UN</p>
                 <h2>ORADOR</h2>
                 <p>Anotate como orador para dar una charla ignite. cuentanos de que quieres hablar!</p>
@@ -75,7 +87,7 @@
                     </div>
                     <textarea name="tema" id="tema" cols="30" rows="10" placeholder="Sobre que quieres hablar?"></textarea>
                     <p id="recordatorio">Recuerda incluir un titulo para tu charla</p>
-                    <button> type="submit" value="Enviar" class="botonEnviar" </button>
+                    <button type="submit" value="Enviar" class="botonEnviar"> Registrar orador </button>
                 </form>
             </section>
             

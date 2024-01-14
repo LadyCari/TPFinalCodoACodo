@@ -13,7 +13,7 @@
                 <li>Conferencias</li>
                 <li>Terminos y condiciones</li>
                 <li>Privacidad</li>
-                <li>Estudiantes</li>
+                <li><a href="./desarrolladores.jsp"> Desarrolladores </a></li>
             </ul>
         </footer>
 
