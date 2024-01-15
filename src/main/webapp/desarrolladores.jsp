@@ -56,7 +56,7 @@
                     <img src="https://cdn-icons-png.flaticon.com/512/6326/6326055.png" alt="Desarrolador">
                     <h3>Fernando Gerez</h3>
                     <div class="iconos">
-                    <a href="" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/fernando-gerez/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="fernando.gerez30@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
                     </div>
                 </div>
